@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Rock Scissor Paper </title>
+   <link rel="stylesheet" href="style.css">
+   <script src="app.js" defer></script>
+</head>
+
+<body>
+   <div class="container">
+      <h2> Rock Scissor Paper </h2>
+      <div id="game">
+         <div class="game-interface">
+            <h3 class="text"> Choose one of them </h3>
+            <div class="input-group">
+               <form action="">
+                  <span> Rock </span> <input type="radio" name="selection"  value="rock" checked>
+                  <span>Scissor </span> <input type="radio" name="selection" value="scissor" id="">
+                  <span> Paper </span> <input type="radio" name="selection" value="paper" id="">
+               </form>
+            </div>
+            <div class="btn-wrap">
+               <button id="go-btn"> Go </button>
+            </div>
+         </div>
+
+         <div class="game-last-result">
+            <h3 class="text-center"> Last Result </h3>
+            <div class="player">
+               <span> Player : </span> <span id="player-choice"> Rock </span>
+            </div>
+            <div class="computer">
+               <span> Computer : </span> <span id="computer-choice"> Rock </span>
+            </div>
+            <div class="winner">
+               <span> Winner :  </span> <span id="winner">  Computer </span>
+            </div>
+         </div>
+         <div class="game-score-board">
+            <h3 class="text-center"> ScoreBoard </h3>
+            <div class="player">
+               <span> Player </span> <span id="player-score"> 0 </span>
+            </div>
+            <div class="computer">
+               <span> Computer </span> <span id="computer-score"> 0 </span>
+            </div>
+            <button onclick='reset()'> Reset </button>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
